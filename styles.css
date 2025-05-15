@@ -103,7 +103,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,9 +112,9 @@ body {
     color: white;
     padding-top: var(--navbar-height);
     background: rgba(0, 0, 0, 0.5);
-    margin-top: -550px;
+    margin-top: -200px;
     /* adjust this value based on your navbar height */
-    margin-bottom: -300px;
+    margin-bottom: -200px;
 }
 
 .hero-section h1 {
