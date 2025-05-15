@@ -112,9 +112,9 @@ body {
     color: white;
     padding-top: var(--navbar-height);
     background: rgba(0, 0, 0, 0.5);
-    margin-top: -200px;
+    margin-top: -400px;
     /* adjust this value based on your navbar height */
-    margin-bottom: -200px;
+    margin-bottom: -400px;
 }
 
 .hero-section h1 {
