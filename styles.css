@@ -2,8 +2,9 @@
 :root {
     --primary-color: darkblue;
     --secondary-color: #3498db;
-    --background-color: #f8f9fa;
-    --text-color: #2c3e50;
+    --background-color: none;
+    --text-color: #2c3e50; /*#f8f9fa*/
+    --text-color-light: #f8f9fa;
     --navbar-height: 80px;
 }
 
@@ -23,6 +24,7 @@ body {
 
 /* Container */
 .container {
+    background-color: var(--background-color);
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -102,7 +104,7 @@ body {
 }
 
 /* Hero Section */
-.hero-section {
+.hero-section { 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -110,67 +112,73 @@ body {
     align-items: center;
     text-align: center;
     color: white;
-    padding-top: var(--navbar-height);
+    padding-top: calc(var(--navbar-height) + 150px);
     background: rgba(0, 0, 0, 0.5);
-    margin-top: -400px;
-    /* adjust this value based on your navbar height */
-    margin-bottom: -400px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .hero-section h1 {
+    top: calc(var(--navbar-height) + 900px);
     font-size: 4rem;
     font-weight: 800;
     text-shadow: 0 0 10px #727fde;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
+    /*margin-top: -100px; /* Adjusted to move 200px up */
 }
 
 .hero-section p {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .hero-info-title {
     text-align: center;
     color: #727fde;
-    padding: 8px 5px;
+    padding: 15px 5px;
     border: 1px solid #727fde77;
     width: 1000px;
     background-color: #2200493d;
     box-shadow: 0 0 10px #727fde;
     border-radius: 50px;
     font-size: 2rem;
-    margin-top: -600px;
-    margin-bottom: 100px;
+    margin: 0 auto; /* Center horizontally */
+    position: absolute; /* Positioning for centering */
+    top: calc(var(--navbar-height) + 150px); /* 100px from the navbar */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 0); /* Adjust for horizontal center */
+    /*margin-top: 5px; /* Ensure spacing from the top */
 }
 
 /* Section Padding */
 .section-padding {
-    padding: 60px 0;
+    padding: 150px 0;
 }
 
 /* Platform Overview */
 #platform {
-    background-color: rgba(248, 249, 250, 0.3);
-    margin-top: -850px;
-    margin-bottom: 350px;
+    background-color: var(--background-color);
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 90px 0;
     min-height: 30vh;
     display: flex;
     text-align: justify;
 }
-
 #platform h2 {
-    text-shadow: 0 0 10px #727fde;
+    text-shadow: 0 0 10px #f8f9fa; 
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--text-color);
+    color: var(--text-color-light);
     text-align: center;
     margin-bottom: 40px;
 }
 
 .platform-description {
+    display: flex;
+    color: var(--text-color-light);
     font-size: 1.2rem;
-    line-height: 2.5;
+    line-height: 2.2;
 }
 
 .platform-description img-fluid {
@@ -180,7 +188,8 @@ body {
 
 /* Cards */
 .card {
-    background: white;
+    background: none;
+    background-color: none;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -217,7 +226,7 @@ body {
     text-shadow: 0 0 10px #727fde;
     text-align: center;
     margin-bottom: 40px;
-    color: var(--text-color);
+    color: var(--text-color-light);
 }
 
 #tech .row {
