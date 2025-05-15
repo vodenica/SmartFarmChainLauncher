@@ -144,7 +144,7 @@ body {
     font-size: 2rem;
     margin: 0 auto; /* Center horizontally */
     position: absolute; /* Positioning for centering */
-    top: calc(var(--navbar-height) + 150px); /* 100px from the navbar */
+    top: calc(var(--navbar-height) + 100px); /* 100px from the navbar */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, 0); /* Adjust for horizontal center */
     /*margin-top: 5px; /* Ensure spacing from the top */
