@@ -28,7 +28,6 @@
                     <li class="nav-item"><a class="nav-link" href="#platform">Platforma</a></li>
                     <li class="nav-item"><a class="nav-link" href="#tech">Tehnička Implementacija</a></li>
                     <li class="nav-item"><a class="nav-link" href="#functionality">Funkcionalnost</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tokenization">Tokenizacija</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experiments">Testiranje</a></li>
                     <li class="nav-item"><a class="nav-link" href="#benefits">Benefiti</a></li>
                 </ul>
@@ -49,9 +48,28 @@
                 <i class='bx bxl-sketch'></i>
                 Revolucionarni Pristup u Poljoprivredi kroz IoT, Blockchain and AI
             </div>
-            <h1>Dobrodošli na SmartFarmChain</h1>
+            <h1>Dobrodošli na Prezentaciju SmartFarmChain Platforme</h1>
             <p>SmartFarmChain integriše najnovije tehnologije sa tradicionalnim pristupima u poljoprivredi kako bi se osigurao održivi i efektivni savremeni poljoprivredni eko-sistem.</p>
         </div>
+         <!-- Button to move to Platform overview -->
+            <div class="text-center" style="margin-top: 50px;">
+                <button id="showPlatformBtn" class="btn btn-dark btn-lg" style="transition: background-color 0.3s, transform 0.3s; margin: 0 auto; display: block;">
+                    Platforma
+                </button>
+            </div>
+
+            <script>
+                document.getElementById('showPlatformBtn').addEventListener('click', function() {
+                    document.getElementById('platform').scrollIntoView({ behavior: 'smooth' });
+                });
+            </script>
+
+            <style>
+                #showExperimentsBtn:hover {
+                    background-color: #333333;
+                    transform: translateY(5px);
+                }
+            </style>
     </section>
 
     <!-- Platform Overview -->
@@ -61,7 +79,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="platform-description">
-                        <p>SmartFarmChain digitalna platforma rešava probleme mladih poljoprivrednika (30-40 godina) iz ruralnih sredina koji se susreću sa izazovima plasmana proizvoda, praćenja proizvodnih procesa i korišćenja savremenih tehnologija za unapređenje kvalitetan kako agrarnih i stočarski proizvoda. Sistem omogućava kompletnu digitalizaciju farmi, tokenizaciju svih resursa resursa, direktnu prodaju kupcima i uz primenu veštačke inteligencije vrši analizu svih podataka u cilju optimizacije i što efikasnije proizvodnje i upravljanje resursima.</p>
+                        <p>SmartFarmChain digitalna platforma rešava probleme mladih poljoprivrednika (30-40 godina) iz ruralnih sredina koji se susreću sa izazovima plasmana proizvoda, praćenja proizvodnih procesa i korišćenja savremenih tehnologija za unapređenje kvalitetan kako agrarnih i stočarski proizvoda. Sistem omogućava kompletnu digitalizaciju farmi, tokenizaciju svih resursa, direktnu prodaju kupcima i uz primenu veštačke inteligencije vrši analizu svih podataka u cilju optimizacije i što efikasnije proizvodnje i upravljanje resursima.</p>
                     </div>
                 </div>
                 <!-- Platform diagram -->
@@ -69,6 +87,25 @@
                     <img src="assets/all-images/Web3-data-flow-05.png" alt="Platform Diagram" class="img-fluid" style="border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
                 </div>
             </div>
+            <!-- Button to move to Platform overview -->
+            <div class="text-center" style="margin-top: 50px;">
+                <button id="showTechBtn" class="btn btn-dark btn-lg" style="transition: background-color 0.3s, transform 0.3s; margin: 0 auto; display: block;">
+                    Tehnička Implementacija
+                </button>
+            </div>
+
+            <script>
+                document.getElementById('showTechBtn').addEventListener('click', function() {
+                    document.getElementById('tech').scrollIntoView({ behavior: 'smooth' });
+                });
+            </script>
+
+            <style>
+                #showExperimentsBtn:hover {
+                    background-color: #333333;
+                    transform: translateY(5px);
+                }
+            </style>
         </div>
     </section>
 
@@ -76,33 +113,53 @@
     <section class="section-padding" id="tech">
         <div class="container">
             <h2 class="text-center mb-5">Tehnička Implemementacija</h2>
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
                             <h5>IoT Integracija</h5>
                             <p>Pametni senzori i digitalan platforma omogućava praćenje i kontrolu na poljoprivrednom gazdinstvu.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
                             <h5>Blockchain Protokol</h5>
-                            <p>Bezbedno, transparentno kao i neizbrisive zapise obezbeđuje se korišćenjem Blockchain protokola.</p>
+                            <p>Bezbedno, transparentno kao i neizbrisive zapise obezbeđuje se korišćenjem Blockchain protokola i tokenizacija resursa.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
                             <h5>Veštačka Intelegencija i Analitika</h5>
                             <p>Platforma omogućava prikupljanje i analizu podataka, omogućavajući donošenje ispravnih odluka.</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Button to move to System Functionality -->
+            <div class="text-center" style="margin-top: 50px;">
+                <button id="showFunctionalityBtn" class="btn btn-dark btn-lg" style="transition: background-color 0.3s, transform 0.3s; margin: 0 auto; display: block;">
+                    Funkcionalnost
+                </button>
+            </div>
+
+            <script>
+                document.getElementById('showFunctionalityBtn').addEventListener('click', function() {
+                    document.getElementById('functionality').scrollIntoView({ behavior: 'smooth' });
+                });
+            </script>
+
+            <style>
+                #showExperimentsBtn:hover {
+                    background-color: #333333;
+                    transform: translateY(5px);
+                }
+            </style>
         </div>
+
     </section>
 
     <!-- System Functionality -->
@@ -110,12 +167,12 @@
         <div class="container">
             <h2 class="text-center mb-5">Funkcionalnost</h2>
             <!-- Add system functionality details -->
-            <div class="row g-4">
+            <div class="row g-6">
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
                             <h5>Praćenje Proizvodnje</h5>
-                            <p>Omogućava praćenje svih faza proizvodnje i resursa.</p>
+                            <p>Omogućava praćenje svih faza poljoprivredne proizvodnje i upotrebe resursa.</p>
                         </div>
                     </div>
                 </div>
@@ -131,7 +188,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5>Direktna Prodaja</h5>
-                            <p>Omogućava direktnu prodaju proizvoda kupcima.</p>
+                            <p>Omogućava direktnu prodaju poljoprivrednih proizvoda kupcima (B2B & B2C).</p>
                         </div>
                     </div>
                 </div>
@@ -139,23 +196,79 @@
                     <div class="card">
                         <div class="card-body">
                             <h5>Analitika i Izveštavanje</h5>
-                            <p>Omogućava analizu podataka i generisanje izveštaja.</p>
+                            <p>Omogućava prediktivnu analizu prikupljenih podataka kao i generisanje izveštaja.</p>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <p class="text-center">SmartFarmChain je integrisana digitalna platforma koja objedinjuje IoT, blockchain protokol i veštačku inteligenciju za sveobuhvatno upravljanje poljoprivrednim resursima na jednom poljoprivrednom gazdinstvu. Osnovna vrednost sistema je u tokenizaciji poljoprivrednih dobara (useva, mehanizacije) koja omogućava direktnu trgovinu između proizvođača i kupaca, eliminišući posrednike. Takođe, SmartFarmChain pruža precizno praćenje proizvodnih procesa kroz IoT senzore, blokchain protokol, prediktivnu analitiku za optimizaciju prinosa, praćenje životenja na gazdinstvu i automatizovano održavanje mehanizacije – sve kroz jedinstveni interfejs koji povećava efikasnost, profitabilnost i tržišni pristup savremenim poljoprivrednicima..</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Administracija</h5>
+                            <p>Upravljanje korisničkim nalozima, dozvolama i funkcijama platforme.</p>
+                        </div>
                     </div>
-        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                            <div class="card-body">
+                            <h5>Upotreba Dronova</h5>
+                            <p>Nadzor useva za pravovremene agronomske odluke i optimizaciju proizvodnje.</p>
+                        </div>
+                    </div>
+                </div>             
+                <div class="col-12" style="margin-top: 50px;"></div>
+                        <p class="text-center" style="grid-column: 1 / -1; text-align: justify; font-size: 1.5rem; line-height: 2.5;"></p>
+                            SmartFarmChain je integrisana digitalna platforma koja objedinjuje IoT, blockchain protokol i veštačku inteligenciju za sveobuhvatno upravljanje poljoprivrednim resursima na jednom poljoprivrednom gazdinstvu primenom tzv. "Precizne Poljoprivrede". Osnovna vrednost sistema je u tokenizaciji poljoprivrednih dobara (useva, mehanizacije) koja omogućava direktnu trgovinu između proizvođača i kupaca, eliminišući posrednike. Takođe, SmartFarmChain pruža precizno praćenje proizvodnih procesa kroz IoT senzore, blokchain protokol, prediktivnu analitiku za optimizaciju prinosa, praćenje životenja na gazdinstvu i automatizovano održavanje mehanizacije – sve kroz jedinstveni interfejs koji povećava efikasnost, profitabilnost i tržišni pristup savremenim poljoprivrednicima.
+                        </p>
+                </div>
+            </div>
+            <!-- Button to move to Functionality Diagram -->
+            <div class="text-center">
+                <button id="showDiagramBtn" class="btn btn-primary btn-lg" style="transition: background-color 0.3s, transform 0.3s; margin: 0 auto; display: block;">
+                    Dijagram Funkcionalnosti
+                </button>
+            </div>
+
+            <script>
+                document.getElementById('showDiagramBtn').addEventListener('click', function() {
+                    document.querySelector('.col-md-12.text-center').scrollIntoView({ behavior: 'smooth' });
+                });
+            </script>
+
+            <style>
+                #showDiagramBtn:hover {
+                    background-color: #0056b3;
+                    transform: translateY(5px);
+                }
+            </style>
+            <!-- Functionality diagram -->
+            <div class="col-md-12 text-center" style="margin-top: 150px;">
+                <img src="assets/all-images/agricultural-asset-tokenization-flow-v2.png" alt="Functionality Diagram" class="img-fluid" style="border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); transform: scale(0.8);">
+            </div>
+
+            <!-- Button to move to Field Experiments -->
+            <div class="text-center" style="margin-top: -100px;">
+                <button id="showExperimentsBtn" class="btn btn-primary btn-lg" style="transition: background-color 0.3s, transform 0.3s; margin: 0 auto; display: block;">
+                    Prikaži Testiranja
+                </button>
+            </div>
+
+            <script>
+                document.getElementById('showExperimentsBtn').addEventListener('click', function() {
+                    document.getElementById('experiments').scrollIntoView({ behavior: 'smooth' });
+                });
+            </script>
+
+            <style>
+                #showExperimentsBtn:hover {
+                    background-color: #0056b3;
+                    transform: translateY(5px);
+                }
+            </style>
         </div>
     </section>
 
-    <!-- Asset Tokenization -->
-    <section class="section-padding" id="tokenization">
-        <div class="container">
-            <h2 class="text-center mb-5">Tokenizacija</h2>
-            <!-- Add tokenization process details -->
-        </div>
-    </section>
+    <!-- Tokenization Process - to be added, for now removed!-->
 
     <!-- Field Experiments -->
     <section class="section-padding bg-light" id="experiments">
@@ -168,47 +281,66 @@
     <!-- Benefits -->
     <section class="section-padding" id="benefits">
         <div class="container">
-            <h2 class="text-center mb-5">Benefits za Farmere</h2>
+            <h2 class="text-center mb-5">Benefiti za Farmere</h2>
             <div class="row g-4">
                 <div class="col-md-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5>Increased Efficiency</h5>
-                            <p>Optimize operations through data-driven decisions.</p>
+                            <h5>Efikasnost</h5>
+                            <p>Optimizacija proizvodnje kroz podacima vođeno donošenje odluka.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5>Cost Reduction</h5>
-                            <p>Minimize waste and optimize resource usage.</p>
+                            <h5>Smanjenje Troškova</h5>
+                            <p>Minimizacija otpada i optimizacija resursa.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5>Transparency</h5>
-                            <p>Clear tracking of all farming operations.</p>
+                            <h5>Transparentnost</h5>
+                            <p>Jasno praćenje svih poljoprivrednih operacija.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5>Market Access</h5>
-                            <p>Better connection to global markets.</p>
+                            <h5>Pristup Tržištu</h5>
+                            <p>Bolja povezanosta sa domaćim i inostranim tržištima.</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Button to move to Intro -->
+            <div class="text-center" style="margin-top: 50px;">
+                <button id="showIntroBtn" class="btn btn-dark btn-lg" style="transition: background-color 0.3s, transform 0.3s; margin: 0 auto; display: block;">
+                    Uvod ⬆
+                </button>
+            </div>
+
+            <script>
+                document.getElementById('showIntroBtn').addEventListener('click', function() {
+                    document.getElementById('intro').scrollIntoView({ behavior: 'smooth' });
+                });
+            </script>
+
+            <style>
+                #showExperimentsBtn:hover {
+                    background-color: #333333;
+                    transform: translateY(5px);
+                }
+            </style>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2025 SmartFarmChain. All rights reserved.</p>
+        <p>&copy; 2025 SmartFarmChain. Vodenizza-Engineering. All rights reserved.</p>
     </footer>
 
     <script src="app.js"></script>

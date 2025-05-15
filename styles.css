@@ -3,7 +3,8 @@
     --primary-color: darkblue;
     --secondary-color: #3498db;
     --background-color: none;
-    --text-color: #2c3e50; /*#f8f9fa*/
+    --text-color: #2c3e50;
+    /*#f8f9fa*/
     --text-color-light: #f8f9fa;
     --navbar-height: 80px;
 }
@@ -104,7 +105,7 @@ body {
 }
 
 /* Hero Section */
-.hero-section { 
+.hero-section {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -142,11 +143,16 @@ body {
     box-shadow: 0 0 10px #727fde;
     border-radius: 50px;
     font-size: 2rem;
-    margin: 0 auto; /* Center horizontally */
-    position: absolute; /* Positioning for centering */
-    top: calc(var(--navbar-height) + 100px); /* 100px from the navbar */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, 0); /* Adjust for horizontal center */
+    margin: 0 auto;
+    /* Center horizontally */
+    position: absolute;
+    /* Positioning for centering */
+    top: calc(var(--navbar-height) + 100px);
+    /* 100px from the navbar */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, 0);
+    /* Adjust for horizontal center */
     /*margin-top: 5px; /* Ensure spacing from the top */
 }
 
@@ -160,14 +166,15 @@ body {
     background-color: var(--background-color);
     margin-top: 0;
     margin-bottom: 0;
-    padding: 90px 0;
+    padding: 100px 0;
     min-height: 30vh;
     display: flex;
     text-align: justify;
 }
+
 #platform h2 {
-    text-shadow: 0 0 10px #f8f9fa; 
-    font-size: 2.5rem;
+    text-shadow: 0 0 10px #f8f9fa;
+    font-size: 3rem;
     font-weight: 800;
     color: var(--text-color-light);
     text-align: center;
@@ -177,7 +184,7 @@ body {
 .platform-description {
     display: flex;
     color: var(--text-color-light);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 2.2;
 }
 
@@ -213,15 +220,16 @@ body {
 /* Technical Implementation Section */
 #tech {
     background-color: var(--background-color);
-    padding: 60px 0;
+    padding: 100px 0;
+    /*From the top of the navbar when it is loaded*/
     min-height: 35vh;
     display: flex;
-    margin-top: -300px;
+    margin-top: 200px;
     margin-bottom: 100px;
 }
 
 #tech h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 800;
     text-shadow: 0 0 10px #727fde;
     text-align: center;
@@ -245,6 +253,12 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    display: inline-block;
+    /* Ensure cards are inline */
+    vertical-align: top;
+    /* Align cards vertically */
+    margin: 10px;
+    /* Add spacing between cards */
 }
 
 #tech .card:hover {
@@ -265,53 +279,127 @@ body {
 /* System Functionality Section */
 #functionality {
     background-color: var(--background-color);
-    padding: 60px 0;
+    padding: 100px 0;
 }
 
 #functionality h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: 0 0 10px #727fde;
     text-align: center;
     margin-bottom: 40px;
-    color: var(--text-color);
+    color: var(--text-color-light);
 }
 
-/* Tokenization Section */
-#tokenization {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-}
-
-#tokenization h2 {
+#functionality .card {
+    width: 100%;
+    max-width: 350px;
     text-align: center;
-    margin-bottom: 40px;
-    color: var(--text-color);
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: inline-block;
+    /* Ensure cards are inline */
+    vertical-align: top;
+    /* Align cards vertically */
+    margin: 10px;
+    /* Add spacing between cards */
 }
 
-/* Field Experiments Section */
+#functionality .card:hover {
+    transform: translateY(-25px);
+}
+
+#functionality .card h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+#functionality .card p {
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.col-md-12.text-center img {
+    padding-top: 50px;
+    /* Add padding from the navbar */
+    width: -50%;
+    /* Reduce the size of the image to 80% */
+}
+
+/* Field Experiments Section - Testiranje*/
 #experiments {
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: 0 0 10px #727fde;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    color: var(--text-color-light);
     background-color: var(--background-color);
-    padding: 60px 0;
+    padding: 100px 0;
 }
 
 #experiments h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: 0 0 10px #727fde;
     text-align: center;
     margin-bottom: 40px;
-    color: var(--text-color);
+    color: var(--text-color-light);
+    background-color: var(--background-color);
 }
 
-
-/* Benefits Section */
 #benefits .card {
+    width: 100%;
+    max-width: 450px;
     text-align: center;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    border: 1.5px solid #d3d3d3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: inline-block;
+    /* Ensure cards are inline */
+    vertical-align: top;
+    /* Align cards vertically */
+    margin: 10px;
+    /* Add spacing between cards */
+    background-color: var(--background-color);
+}
+
+#benefits .card:hover {
+    transform: translateY(-25px);
+}
+
+#benefits h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: 0 0 10px #727fde;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--text-color-light);
+    background-color: var(--background-color);
 }
 
 #benefits .card h5 {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     margin-bottom: 10px;
+    color: #f8f9fa;
+    text-shadow: 0 0 5px #d3d3d3;
+    /*color: var(--primary-color-light);*/
 }
 
 #benefits .card p {
-    font-size: 0.9rem;
-    color: #555;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #f8f9fa;
+    text-shadow: 0 0 5px #d3d3d3;
 }
 
 /* Footer */
