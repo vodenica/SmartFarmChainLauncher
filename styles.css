@@ -186,12 +186,12 @@ body {
 .platform-description {
     display: flex;
     color: var(--text-color-light);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2.2;
 }
 
 .platform-description img-fluid {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
